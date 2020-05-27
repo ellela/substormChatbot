@@ -1,0 +1,43 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_search:
+    - text: "This is a good questions, we will search for you, please some back tomorrow!"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_substorm:
+    - text: "we are company substorm, we provide different professional services"
+      button: "AI",
+              "Chatbot"
+              "Prestudy"
+              "Superise you!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Substorm."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
